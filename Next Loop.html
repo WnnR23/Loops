@@ -5,37 +5,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loop</title>
+  <title>Loop2</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/next.css">
 </head>
 
 <body>
 
   <main>
     <header>
-      <nav>
-        <a href="#">synthetic</a>
-        <a href="#">wool</a>
-        <a href="#">denim</a>
-        <a href="#">silk</a>
-        <a href="#">line</a>
-      </nav>
-      <div class="header-inner">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor maiores suscipit sequi commodi, nesciunt
-          ullam illo possimus iusto molestiae?</p>
-      </div>
+      <h1>Account settings</h1><a href="index.html" class="close-btn"></a>
     </header>
-    <div class="main-inner">
-      <ul>
-        <li class="box-01">Timer <br><span>45 min</span></li>
-        <li class="box-02">Temperature <br><span>Cold</span></li>
-        <li class="box-03">Load <br><span>Medium</span></li>
-        <a href="Next Loop.html">Next Loop</a>
-      </ul>
-    </div>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <section>
+        <img src="img/avatar.jpg" alt="porfile owner" width="60" height="60">
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" placeholder="Enter your username" required>
+        <hr>
+        <div class="full-name-wrap">
+          <span>
+            <label for="firstname">first name</label>
+            <input type="text" name="first name" id="firstname" placeholder="Enter your first name" required>
+          </span>
+          <span>
+            <label for="lastname">last name</label>
+            <input type="text" name="last name" id="lastname" placeholder="Enter your last name" required>
+          </span>
+        </div>
+        <hr>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <hr>
+        <label for="BIO">bio</label>
+        <textarea name="BIO" id="BIO" placeholder="Tell us about yourself"></textarea>
+        <hr>
+      </section>
+      <footer>
+        <button class="cancel" type="reset">Cancel</button>
+        <button class="save" id="submit" type="submit">Save</button>
+      </footer>
+    </form>
+
   </main>
 
   <script src="js/main.js"></script>

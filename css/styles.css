@@ -96,11 +96,17 @@ nav a:first-child {
   margin: 0;
 }
 
+.main-inner {
+  position: relative;
+  width: 900px;
+}
+
 ul {
   position: relative;
   display: flex;
 }
 
+/*
 ul::before {
   content: "";
   position: absolute;
@@ -125,6 +131,33 @@ ul::after {
   width: 100px;
   height: 100px;
   cursor: pointer;
+} */
+
+.main-inner-shape-l, .main-inner-shape-r {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.main-inner-shape-l:hover, .main-inner-shape-r:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.main-inner-shape-l {
+  transform: rotateZ(90deg);
+  left: -100px;
+}
+
+.main-inner-shape-r {
+  top: 0;
+  transform: rotateZ(-90deg);
+  right: -100px;
 }
 
 ul li {
